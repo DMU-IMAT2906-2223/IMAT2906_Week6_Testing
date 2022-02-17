@@ -4,8 +4,8 @@
 class GameObject {
 public:
 	GameObject(); // Default constructor
-	GameObject(std::string sString);
-	GameObject(int i);
+	GameObject(std::string sString); //Overrided constructor with String
+	GameObject(int i); //Overriden constructor with int
 	
 	void setHealth(int iHealth); //Causes ambiguity if class not virtual in inheritance.
 	std::string moveObject(int x, int y); //Returns the position of the object.
@@ -16,6 +16,6 @@ public:
 
 
 protected:
-	int i_Health;
-	std::string sLocation;
+	int iHealth; //Object health which all objects have. 
+	std::string sLocation; //
 }; 

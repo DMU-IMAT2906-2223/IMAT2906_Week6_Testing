@@ -22,7 +22,7 @@ GameObject::GameObject(int i)
 
 ///GameObject function to set the health.
 void GameObject::setHealth(int iInput) {
-	i_Health = iInput;
+	iHealth = iInput;
 };
 
 ///GameObject function that moves the object by x and y positions. Returns the position of the object.
@@ -35,6 +35,6 @@ std::string GameObject::moveObject(int x, int y) {
 ///GameObject function to get the health.
 int GameObject::getHealth()
 {
-	return i_Health;
+	return iHealth;
 }
 ;

@@ -31,6 +31,8 @@ target_link_libraries(
   gtest_main
 )
 
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT Main)
+
 include(GoogleTest)
 gtest_discover_tests(Main)
 

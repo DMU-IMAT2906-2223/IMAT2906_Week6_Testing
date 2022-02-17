@@ -10,6 +10,6 @@ Boss::Boss() {
 };
 
 ///Boss function to get the current damage.
-int Boss::damage(int i_Hit){
-	return i_Hit;
+int Boss::damage(int iHit){
+	return iHit;
 };

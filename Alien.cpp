@@ -1,29 +1,28 @@
 #include <iostream>
 #include <string>
-#include "Alien.h"
+#include"Alien.h"
 
 //**
 /* Default constructor for the Alien. Alien inherits from GameObject.
  *******************************************************************************/
-Alien::Alien(){
+Alien::Alien() {
 	//std::cout << "Aliens constructor called." << std::endl;
-	this->setHealth(100);
 };
 
 int Alien::getHealth() {
-	return i_Health; ///Ambiguity if virtual is not used in the class definition
+	return iHealth; ///Ambiguity if virtual is not used in the class definition
 };
 
 
 bool Alien::playerDestroyed()
 {
+	GameObject::setHealth(100);
 
-
-	if (i_Health <= 0) {
+	if (iHealth <= 0) {
 		std::cout << "Player is destoryed!!!" << std::endl;
 		return false;
 	}
-	else if(i_Health > 0){
+	else if(iHealth > 0){
 		std::cout << "Player is alive!!!" << std::endl;
 		return true;
 	}
