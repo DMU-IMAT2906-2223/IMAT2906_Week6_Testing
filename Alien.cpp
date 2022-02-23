@@ -16,8 +16,6 @@ int Alien::getHealth() {
 
 bool Alien::playerDestroyed()
 {
-	GameObject::setHealth(100);
-
 	if (iHealth <= 0) {
 		std::cout << "Player is destoryed!!!" << std::endl;
 		return false;
@@ -27,12 +25,7 @@ bool Alien::playerDestroyed()
 		return true;
 	}
 }
-int Alien::score ()
+float Alien::score ()
 {
-	return 0;
+	return fScore * static_cast<float>(iHealth);
 }
-int Alien::test()
-{
-	return 0;
-}
-;

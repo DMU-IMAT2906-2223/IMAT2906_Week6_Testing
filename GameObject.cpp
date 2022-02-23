@@ -37,4 +37,7 @@ int GameObject::getHealth()
 {
 	return iHealth;
 }
-;
+void GameObject::setScore(float fSCore)
+{
+	this->fScore = fScore;
+}

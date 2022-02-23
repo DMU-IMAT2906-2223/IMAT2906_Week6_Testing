@@ -10,12 +10,14 @@ public:
 	void setHealth(int iHealth); //Causes ambiguity if class not virtual in inheritance.
 	std::string moveObject(int x, int y); //Returns the position of the object.
 	int getHealth();
+	void setScore(float fSCore);
 
 	//Pure virtual function
-	virtual int score() = 0;
+	virtual float score() = 0;
 
 
 protected:
 	int iHealth; //Object health which all objects have. 
 	std::string sLocation; //
+	float fScore;
 }; 
