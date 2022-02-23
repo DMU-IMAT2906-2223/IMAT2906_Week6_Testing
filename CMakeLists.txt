@@ -24,6 +24,10 @@ add_executable(
   GameObject.cpp
   GameObject.h
   Tests.h
+
+  Alien.h
+  MegaBoss.h
+  MegaBoss.cpp
   
 )
 target_link_libraries(
