@@ -16,16 +16,19 @@ int Alien::getHealth() {
 
 bool Alien::playerDestroyed()
 {
+	GameObject::setHealth(100);
+
 	if (iHealth <= 0) {
 		std::cout << "Player is destoryed!!!" << std::endl;
 		return false;
 	}
-	else if(iHealth > 0){
+	else if (iHealth > 0) {
 		std::cout << "Player is alive!!!" << std::endl;
 		return true;
 	}
-}
-float Alien::score ()
+};
+
+int Alien::score()
 {
-	return fScore * static_cast<float>(iHealth);
-}
+	return 0;
+};

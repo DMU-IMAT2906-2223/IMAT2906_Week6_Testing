@@ -8,5 +8,4 @@ class MegaBoss : public virtual Boss , public virtual Alien { //Need to be virtu
 public:
 	MegaBoss(); // Default constructor
 	void firedOn();
-	float score() override;
 };

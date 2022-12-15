@@ -21,14 +21,8 @@ void MegaBoss::firedOn()
 	i_Ship = getHealth();
 	std::cout << "Health returned\n";
 
-	//Set the health of the megaboss.
+	
 	setHealth(damage(50));
 	std::cout << "Damage delivered!\n";
 	std::cout << "Mega Boss health " << getHealth() << std::endl;
-}
-
-//Return the score of the megaboss multiplied by 100.
-float MegaBoss::score()
-{
-	return fScore * 100.f;
 }

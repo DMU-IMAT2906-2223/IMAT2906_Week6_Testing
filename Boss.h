@@ -7,7 +7,6 @@ class Boss : public virtual GameObject{ //Gameobject needs to be virtual to stop
 public:
 	Boss(); // Default constructor
 	int damage(int iHit); //returns an int of the damage
-	float score() override;
  
 protected:
 	int iDamage = 0;

@@ -36,8 +36,14 @@ std::string GameObject::moveObject(int x, int y) {
 int GameObject::getHealth()
 {
 	return iHealth;
-}
-void GameObject::setScore(float fSCore)
+};
+
+void GameObject::setLocation(std::string locationIn)
 {
-	this->fScore = fScore;
-}
+	sLocation = locationIn;
+};
+
+std::string GameObject::getLocation()
+{
+	return sLocation;
+};

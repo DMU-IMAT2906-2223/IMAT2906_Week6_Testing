@@ -12,8 +12,4 @@ Boss::Boss() {
 ///Boss function to get the current damage.
 int Boss::damage(int iHit){
 	return iHit;
-}
-float Boss::score()
-{
-	return fScore;
-}
+};

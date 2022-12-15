@@ -10,6 +10,5 @@ public:
 	bool playerDestroyed();
 
 	//Virtual function
-	float score () override;
-
+	int score () override;
 };
